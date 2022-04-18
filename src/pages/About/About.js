@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="m-10">
+    <div className="m-10 text-xl">
       <p>
         My Self Faisal Moin. I am currently studying Computer Science And
         Engeneering in Brac university. I was always curious about problem

@@ -10,6 +10,7 @@ import Register from "./pages/Register/Register";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import RequireAuth from "./pages/RecquireAuth/RecquireAuth";
+import NotFound from "./pages/NotFound/NotFound";
 function App() {
   return (
     <div>
@@ -30,6 +31,7 @@ function App() {
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
     </div>
   );
