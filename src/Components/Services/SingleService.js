@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const SingleService = ({ service }) => {
+  const navigate = useNavigate();
   const { img, title, detail, price } = service;
   return (
     <div className="flex flex-col shadow-2xl min-h-[500px] justify-between">
@@ -18,7 +20,10 @@ const SingleService = ({ service }) => {
           <p>{detail}</p>
         </div>
       </div>
-      <button className="h-12 bg-gray-800 hover:bg-gray-700 text-white transition-colors">
+      <button
+        className="h-12 bg-gray-800 hover:bg-gray-700 text-white transition-colors"
+        onClick={() => navigate("/checkout")}
+      >
         CheckOut
       </button>
     </div>

@@ -2,21 +2,21 @@
   {
     "id": 1,
     "img": "https://images.unsplash.com/photo-1510925758641-869d353cecc7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-    "detail": "Stuffs about archery",
+    "detail": "As a sport, archery is accessible to a wide range of people, no matter their age, gender or ability. It is a widespread pastime in both developed and developing countries. Archery is also one of the few sports that can be practised by able-bodied and impaired athletes on a level playing field.",
     "price": 50,
     "title": "Archary"
   },
   {
     "id": 2,
     "img": "https://images.unsplash.com/photo-1608245449230-4ac19066d2d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-    "detail": "Stuffs about Basketball",
+    "detail": "One of the first things you want to do is evaluate the player(s) you are training and develop a workout specifically for them. Not every player needs to work on the same things, so having a general workout for all your players is not the best use of time. Break up your players into specific groups according to what they need to work on.",
     "price": 60,
     "title": "BasketBall"
   },
   {
     "id": 3,
     "img": "https://images.unsplash.com/photo-1513028738826-f000cded30a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80",
-    "detail": "Stuffs about handball",
+    "detail": "Handball Coaching aims to offer knowledge and ideas related to the sport of handball.It is addressed to the whole community of the sport and its ultimate goal is the interaction and communication of all its peopleIt will be a great pleasure for all of us to receive your feedback on the content of our page, send us ideas and opinions and through this communication grow the handball family even more.",
     "price": 70,
     "title": "HandBall"
   }
