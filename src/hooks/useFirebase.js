@@ -1,16 +1,24 @@
 import auth from "../firebase/firebase.init";
-import {useSignInWithGoogle} from 'react-firebase-hooks/auth';
+import {
+  useCreateUserWithEmailAndPassword,
+  useSignInWithGoogle,
+} from "react-firebase-hooks/auth";
 
 const useFirebase = (arg) => {
-  const [signInWithGoogle, user, error] = useSignInWithGoogle(auth);
+  const [createUserWithEmailAndPassword, user, loading, error] =
+    useCreateUserWithEmailAndPassword(auth);
 
-  const registerWithEmail = (arg) => {}
+  const [signInWithGoogle, user1, error1] = useSignInWithGoogle(auth);
+
+  const registerWithEmail = (email, password) => {
+    createUserWithEmailAndPassword(email, password);
+  };
 
   const handleGoogleSignIn = () => {
-    signInWithGoogle()
-  }
+    signInWithGoogle();
+  };
 
-  return {registerWithEmail, handleGoogleSignIn}
-}
+  return { registerWithEmail, handleGoogleSignIn };
+};
 
-export default useFirebase
+export default useFirebase;

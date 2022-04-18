@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  border: 0px solid gray;
+  padding: 10px 14px;
+  background-color: rgba(211, 211, 211, 0.895);
+}
+
+input:focus {
+  outline: none;
+}

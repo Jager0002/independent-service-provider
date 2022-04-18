@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import useFirebase from "../../hooks/useFirebase";
 
 const Login = () => {
-  const {handleGoogleSignIn } = useFirebase();
+  const { handleGoogleSignIn } = useFirebase();
   const handleSubmit = (e) => {
     e.preventDefault();
   };
@@ -12,11 +12,13 @@ const Login = () => {
   const handlePassword = (e) => {};
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <div>
+    <div className="">
+      <h2 className="text-center text-4xl my-8">Login</h2>
+      <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
+        <div className="w-1/4 flex flex-col  mx-auto">
           <label htmlFor="email">Email</label>
           <input
+            required
             type="email"
             name="email"
             id="email"
@@ -24,9 +26,10 @@ const Login = () => {
             onBlur={handleEmail}
           />
         </div>
-        <div>
+        <div className="w-1/4 flex flex-col  mx-auto">
           <label htmlFor="password">Password</label>
           <input
+            required
             type="password"
             name="password"
             id="password"
@@ -34,10 +37,24 @@ const Login = () => {
             onBlur={handlePassword}
           />
         </div>
-        <button type="submit">login</button>
+        <button
+          type="submit"
+          className="w-1/4 mt-2 bg-gray-700 text-white mx-auto p-3 text-center"
+        >
+          login
+        </button>
       </form>
-      <Link to='/register'>dont have account</Link>
-      <button onClick={handleGoogleSignIn}>sign in with google</button>
+      <div className="mt-4 w-1/4 mx-auto">
+        <button
+          className="w-full bg-gray-700 text-white mx-auto p-3 text-center my-2"
+          onClick={handleGoogleSignIn}
+        >
+          Sign in with google
+        </button>
+        <Link className="text-center block" to="/register">
+          Don't have account
+        </Link>
+      </div>
     </div>
   );
 };
