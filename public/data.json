@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "img": "https://images.unsplash.com/photo-1510925758641-869d353cecc7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    "detail": "Stuffs about archery",
+    "price": 50,
+    "title": "Archary"
+  },
+  {
+    "id": 2,
+    "img": "https://images.unsplash.com/photo-1608245449230-4ac19066d2d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    "detail": "Stuffs about Basketball",
+    "price": 60,
+    "title": "BasketBall"
+  },
+  {
+    "id": 3,
+    "img": "https://images.unsplash.com/photo-1513028738826-f000cded30a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80",
+    "detail": "Stuffs about handball",
+    "price": 70,
+    "title": "HandBall"
+  }
+]
