@@ -7,14 +7,25 @@ import Home from "./pages/Home/Home";
 import Header from "./pages/Shared/Header/Header";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import RequireAuth from "./pages/RecquireAuth/RecquireAuth";
 function App() {
   return (
     <div>
+      <ToastContainer></ToastContainer>
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
-        <Route path="/checkOut" element={<CheckOut></CheckOut>}></Route>
+        <Route
+          path="/checkOut"
+          element={
+            <RequireAuth>
+              <CheckOut></CheckOut>
+            </RequireAuth>
+          }
+        ></Route>
         <Route path="/Blog" element={<Blog></Blog>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>

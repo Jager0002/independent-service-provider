@@ -1,16 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import useFirebase from "../../hooks/useFirebase";
 
 const Login = () => {
-  const { handleGoogleSignIn } = useFirebase();
+  const { handleGoogleSignIn, resetHandler, handleEmailSignIn } = useFirebase();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
   };
-  const handleEmail = (e) => {};
+  const handleEmail = (e) => {
+    setEmail(e.target.value);
+  };
 
-  const handlePassword = (e) => {};
+  const handlePassword = (e) => {
+    setPassword(e.target.value);
+  };
 
+  
   return (
     <div className="">
       <h2 className="text-center text-4xl my-8">Login</h2>
@@ -37,9 +44,11 @@ const Login = () => {
             onBlur={handlePassword}
           />
         </div>
+        <button onClick={() => resetHandler(email)}>Forgot password?</button>
         <button
           type="submit"
           className="w-1/4 mt-2 bg-gray-700 text-white mx-auto p-3 text-center"
+          onClick={() => handleEmailSignIn(email, password)}
         >
           login
         </button>
