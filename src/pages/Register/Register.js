@@ -2,7 +2,7 @@ import React from "react";
 import useFirebase from "../../hooks/useFirebase";
 
 const Register = () => {
-  const { registerWithEmail, signUpWithGoogle } = useFirebase();
+  const { registerWithEmail, handleGoogleSignIn } = useFirebase();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -48,6 +48,7 @@ const Register = () => {
         </div>
         <button type="submit">register</button>
       </form>
+      <button onClick={handleGoogleSignIn}>sign in with google</button>
     </div>
   );
 };
