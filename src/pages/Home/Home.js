@@ -5,7 +5,7 @@ import Services from "../../Components/Services/Services";
 const Home = () => {
   return (
     <div>
-      <div>
+      <div className="mb-14">
         <img className="h-[626px] w-full object-cover" src={cover} alt="" />
       </div>
       <Services></Services>
